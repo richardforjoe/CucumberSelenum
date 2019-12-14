@@ -11,8 +11,10 @@ import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.SecureAreaPage;
+import utils.WindowManager;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
 
@@ -25,7 +27,7 @@ public class BaseTests {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver(); //EdgeDriver, FirefoxDriver, InternetExplorerDriver etc
         goHome();
-
+        // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
         driver.manage().window().maximize();//driver.manage.maximize() /fullscreen()
         homePage = new HomePage(driver); //Instantiate home page after launching browser
     }
@@ -45,4 +47,8 @@ public class BaseTests {
 //        BaseTests test = new BaseTests();
 //        test.setUp();
 //    }
+
+    public WindowManager getWindowManager(){
+        return new WindowManager(driver);
+    }
 }
