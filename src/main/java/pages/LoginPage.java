@@ -2,8 +2,10 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import utils.BaseClass;
 
-public class LoginPage {
+public class LoginPage  {
 
     private WebDriver driver;
     private By formUserName = By.id("username");
@@ -32,4 +34,10 @@ public class LoginPage {
         String statusAlertText = driver.findElement(statusAlert).getText();
         return statusAlertText;
     }
+
+    //Initializing the Page Objects
+    /**
+    public LoginPage(){
+        PageFactory.initElements(driver,this);
+    }**/
 }

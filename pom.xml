@@ -36,6 +36,76 @@
                 <artifactId>selenium-support</artifactId>
                 <version>3.141.59</version>
             </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-core</artifactId>
+                <version>1.2.5</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-server</artifactId>
+                <version>3.11.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>1.1.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.applitools</groupId>
+                <artifactId>eyes-selenium-java3</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-java8</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-junit</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-picocontainer</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
 
     </project>
