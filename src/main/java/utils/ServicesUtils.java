@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 
 public class ServicesUtils {
     public enum HttpMethod {
-        GET("get"), POST("post");
+        GET("get"), POST("post"), PATCH("patch"), PUT("put");
 
         private String method;
         private HttpMethod(String method){
@@ -21,6 +21,7 @@ public class ServicesUtils {
     }
 
     private static RequestSpecification request = given().accept(ContentType.JSON);
+
 
     public static Response execute(String endpoint, HttpMethod method){
         return execute(endpoint, method, true);
@@ -40,6 +41,13 @@ public class ServicesUtils {
 
             case POST:
                 response = request.post(endpoint);
+                break;
+
+            case PATCH:
+                response = request.patch(endpoint);
+                break;
+            case PUT:
+                response = request.put(endpoint);
                 break;
         }
 

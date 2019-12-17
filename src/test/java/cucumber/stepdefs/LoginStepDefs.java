@@ -31,6 +31,7 @@ public class LoginStepDefs extends BaseTests {
     @When("User navigate to (.*) ")
     public void navigateToPage(String page){
         homePage = new HomePage(driver);
+        assertTrue(homePage.getTitle().contains("Welcome to the-internet"),"text is incorrect");
 
         loginPage = homePage.clickFormAuthentication();
 

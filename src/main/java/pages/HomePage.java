@@ -9,9 +9,14 @@ import utils.BaseClass;
 public class HomePage {
 
     private WebDriver driver;
+    private By pageTitle = By.className("heading");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
+    }
+
+    public String getTitle(){
+        return driver.findElement(pageTitle).getText();
     }
 
     public LoginPage clickFormAuthentication(){
