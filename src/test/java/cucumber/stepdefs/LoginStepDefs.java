@@ -23,19 +23,23 @@ public class LoginStepDefs extends BaseTests {
     private Response response;
     private int accountId;
 
-    HomePage homePage;
-    LoginPage loginPage;
-    SecureAreaPage secureAreaPage;
-    
+    protected HomePage homePage;
+    protected LoginPage loginPage;
+    protected SecureAreaPage secureAreaPage;
+
+    @Given("User is on Home Page")
+    public void loadHomePage(){
+        BaseTests.setUp();
+        // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
+
+    }
 
     @When("User navigate to (.*) ")
     public void navigateToPage(String page){
-        homePage = new HomePage(driver);
-
-        loginPage = homePage.clickFormAuthentication();
-
-
-
+        //homePage = new HomePage(driver);
+        //loginPage = new LoginPage(driver);
+        homePage.clickFormAuthentication();
+        System.out.println(loginPage.getAlertText());
 
     }
 
@@ -85,12 +89,7 @@ public class LoginStepDefs extends BaseTests {
         Assert.assertEquals(balance, getCurrentBalance(), 0.0f);
     }
 
-    @Given("User is on Home Page")
-    public void loadHomePage(){
-        BaseTests.setUp();
-        // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
 
-    }
 
     private float getCurrentBalance(){
         String endpoint = format(Endpoints.GET_ACCOUNT, accountId);

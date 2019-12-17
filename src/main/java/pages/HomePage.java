@@ -8,15 +8,15 @@ import utils.BaseClass;
 
 public class HomePage {
 
-    private WebDriver driver;
+    protected static WebDriver driver;
 
-    public HomePage(WebDriver driver){
+    public void setDriver(WebDriver driver){
         this.driver = driver;
     }
 
     public LoginPage clickFormAuthentication(){
         clickLink("Form Authentication");
-        return new LoginPage(driver);
+        return new LoginPage();
     }
 
     public DropdownPage clickDropDown(){
@@ -91,6 +91,8 @@ public class HomePage {
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+
+
 
 
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import utils.BaseClass;
 
-public class LoginPage  {
+public class LoginPage  extends HomePage{
 
     private WebDriver driver;
     private By formUserName = By.id("username");
@@ -13,9 +13,9 @@ public class LoginPage  {
     private By formLoginButton = By.cssSelector("#login button");
     private By statusAlert = By.id("flash");
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
+    //public LoginPage(WebDriver driver) {
+    //    this.driver = driver;
+    //}
 
     public void setUsername(String username){
         driver.findElement(formUserName).sendKeys(username);
@@ -27,7 +27,7 @@ public class LoginPage  {
 
     public SecureAreaPage clickLoginButton(){
         driver.findElement(formLoginButton).click();
-    return new SecureAreaPage(driver);
+    return new SecureAreaPage();
     }
 
     public String getAlertText(){

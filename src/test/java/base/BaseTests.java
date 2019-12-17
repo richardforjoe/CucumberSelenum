@@ -47,7 +47,8 @@ public class BaseTests {
         setCookie();
         // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
         driver.manage().window().maximize();//driver.manage.maximize() /fullscreen()
-        homePage = new HomePage(driver); //Instantiate home page after launching browser
+        homePage = new HomePage(); //Instantiate home page after launching browser
+        homePage.setDriver(driver);
     }
 
     @BeforeMethod
