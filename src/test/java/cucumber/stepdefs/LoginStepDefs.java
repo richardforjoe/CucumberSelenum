@@ -22,11 +22,20 @@ public class LoginStepDefs extends BaseTests {
 
     private Response response;
     private int accountId;
+    private String SuccessCode;
+    private String Message;
 
     HomePage homePage;
     LoginPage loginPage;
     SecureAreaPage secureAreaPage;
-    
+
+
+    @Given("User is on Home Page")
+    public void loadHomePage(){
+        BaseTests.setUp();
+        // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
+
+    }
 
     @When("User navigate to (.*) ")
     public void navigateToPage(String page){
@@ -86,12 +95,31 @@ public class LoginStepDefs extends BaseTests {
         Assert.assertEquals(balance, getCurrentBalance(), 0.0f);
     }
 
-    @Given("User is on Home Page")
-    public void loadHomePage(){
-        BaseTests.setUp();
-        // wait for script to load - > driver.manage().timeouts().setScriptTimeout(2,TimeUnit.SECONDS);
 
+    @Given("^a customer does not have an account$")
+    public void requestDetails() {
+
+   }
+
+    @When("^they register$")
+    public void createAnEmployee() {
+        String requestBody = "{\"FirstName\": \"Virender\",\n" +
+                "\"LastName\": \"Singh\",\n" +
+                "\"UserName\": \"simpleuser001\"\n" +
+                ",\"Password\": \"password1\"\n" +
+                ",\"Email\": \"someuser@gmail.com\"\n" +
+                "}";
+
+        String endpoint = format(Endpoints.CREATE_EMPLOYEE);
+        response = ServicesUtils.execute(endpoint, POST_BODY);
     }
+
+    @Then("^an employee is created$")
+    public void AnEmployeeISCreated() {
+        SuccessCode = from(response.asString()).get("SuccessCode");
+        Message = from(response.asString()).get("Message");
+        System.out.println("SucessCode: "+ SuccessCode +" "+ "Message: " + Message);
+}
 
     private float getCurrentBalance(){
         String endpoint = format(Endpoints.GET_ACCOUNT, accountId);

@@ -16,4 +16,7 @@ public class Endpoints {
     public static String WITHDRAW
             = ENDPOINT + "withdraw?accountId=%d&amount=%.2f";
 
+    public static String CREATE_EMPLOYEE
+            = "http://restapi.demoqa.com/customer/register";
+
 }

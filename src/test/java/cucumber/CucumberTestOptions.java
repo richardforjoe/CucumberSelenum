@@ -14,7 +14,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         plugin = {"pretty"},
         glue = {"cucumber.stepdefs"},
-        features = {"src/test/java/cucumber/features"})
+        features = {"src/test/java/cucumber/features"},
+        tags = {})
 
 public class CucumberTestOptions {
 

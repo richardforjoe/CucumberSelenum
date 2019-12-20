@@ -4,6 +4,9 @@ import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -19,6 +22,7 @@ import utils.WindowManager;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -27,6 +31,7 @@ public class BaseTests {
 
     //private WebDriver driver;// Create webdriver object
     protected static EventFiringWebDriver driver;
+    //protected static EventFiringWebDriver browserstack_driver;
     protected static HomePage homePage;
 
 
@@ -35,6 +40,23 @@ public class BaseTests {
 
         utils.BaseClass.loadTestProperties("test");
 
+        //BrowserStack
+        /**FirefoxDriver browserstack_driver = new FirefoxDriver();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+
+
+        String username = System.getProperty("BROWSERSTACK_USERNAME");
+        String accessKey = System.getProperty("BROWSERSTACK_ACCESS_KEY");
+
+        capabilities.setCapability("browser", "Chrome");
+        capabilities.setCapability("browser_version", "62.0");
+        capabilities.setCapability("os", "Windows");
+        capabilities.setCapability("os_version", "10");
+        capabilities.setCapability("resolution", "1024x768");
+
+
+        browserstack_driver = new RemoteWebDriver(new URL("https://"+username+":"+accessKey+"@"+System.getProperty("server")+"/wd/hub"), DesiredCapabilities.firefox());
+        **/
         //String chromeresource = System.getProperty("webdriver.chrome.driver");
 
         //System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
@@ -53,11 +75,13 @@ public class BaseTests {
     @BeforeMethod
     public static void goHome(){
         driver.get(System.getProperty("app.url")); // get url
+        //browserstack_driver.get(System.getProperty("app.url"));
     }
 
     @AfterClass
     public static void tearDown(){
         driver.quit();
+        //browserstack_driver.quit();
     }
 
 //    //No longer needed
