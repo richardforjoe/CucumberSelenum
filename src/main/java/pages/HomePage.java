@@ -15,9 +15,23 @@ public class HomePage {
 
     private By pageTitle = By.tagName("h1");
     private By blogArticle = By.cssSelector("div.hs-rss-item p a");
+    private By blogArticleTitle = By.cssSelector("div.hs-rss-item .hs-rss-title");
     private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
     private By blogSection = By.cssSelector("div.row-fluid-wrapper.row-depth-1.row-number-68");
     private By cookie = By.cssSelector("#hs-eu-confirmation-button");
+
+    public String getCurrentblogPostTitle() {
+        return currentblogPostTitle;
+    }
+
+    private String currentblogPostTitle = "";
+
+    public void setCurrentblogPostTitle(int blogNumber) {
+        this.currentblogPostTitle = getBlogPostTitle(blogNumber);
+        System.out.println(currentblogPostTitle);
+    }
+
+
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -29,7 +43,11 @@ public class HomePage {
         return driver.findElement(pageTitle).getText();
     }
 
-
+    private String getBlogPostTitle(int blogNumber){
+        List<WebElement> blogArticles = driver.findElements(blogArticleTitle);
+        System.out.println(blogArticles.size());
+        return blogArticles.get(blogNumber).getText();
+    }
 
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
@@ -38,6 +56,7 @@ public class HomePage {
     private void clickBlogPost(int blogNumber){
         List<WebElement> blogArticles = driver.findElements(blogArticle);
         System.out.println(blogArticles.size());
+        setCurrentblogPostTitle(blogNumber);
         blogArticles.get(blogNumber).click();
     }
 
@@ -91,7 +110,11 @@ public class HomePage {
 
 
     public BlogArticlePage clickFirstBlog(){
-        clickBlogPost(1);
+        clickBlogPost(0);
     return new BlogArticlePage(driver);}
+
+    public BlogArticlePage clickSecondBlog(){
+        clickBlogPost(1);
+        return new BlogArticlePage(driver);}
 
 }

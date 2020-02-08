@@ -2,6 +2,7 @@ package cucumber.stepdefs;
 
 import base.BaseTests;
 import cucumber.api.java.en.*;
+import pages.BlogArticlePage;
 import pages.BlogPage;
 import pages.HomePage;
 
@@ -16,6 +17,7 @@ public class NavigationStepDefs extends BaseTests {
 
     HomePage homePage;
     BlogPage blogPage;
+    BlogArticlePage blogArticlePage;
 
 
 
@@ -67,13 +69,13 @@ public class NavigationStepDefs extends BaseTests {
     @When("^i click first blog$")
         public void clickFirstBlogs() {
         // Write code here that turns the phrase above into concrete actions
-        homePage.clickFirstBlog();
+        blogArticlePage = homePage.clickFirstBlog();
     };
 
     @Then("^I am taken to the Blogs article page$")
         public void iAmOnArticlePage() {
         // Write code here that turns the phrase above into concrete actions
-
+        assertTrue(blogArticlePage.getBlogPostArticleTitle().equals(homePage.getCurrentblogPostTitle()),"The wrong blog was displayed");
 
     };
 
