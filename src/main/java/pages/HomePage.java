@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -11,13 +12,18 @@ import java.util.List;
 public class HomePage {
 
     private WebDriver driver;
+
     private By pageTitle = By.tagName("h1");
     private By blogArticle = By.cssSelector("div.hs-rss-item p a");
-    private By MenuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
+    private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
+    private By blogSection = By.cssSelector("div.row-fluid-wrapper.row-depth-1.row-number-68");
+    private By cookie = By.cssSelector("#hs-eu-confirmation-button");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
+
+
 
     public String getTitle(){
         return driver.findElement(pageTitle).getText();
@@ -36,7 +42,7 @@ public class HomePage {
     }
 
     private void selectMainMenu(String menu){
-        List<WebElement> menuItems = driver.findElements(MenuNavigation);
+        List<WebElement> menuItems = driver.findElements(menuNavigation);
         System.out.println(menuItems.size());
 
         switch (menu) {
@@ -54,7 +60,7 @@ public class HomePage {
 
 
     public void clickCookieBanner(){
-        driver.findElement(By.cssSelector("#hs-eu-confirmation-button")).click();
+        driver.findElement(cookie).click();
     }
 
     public ServicesPage clickWhatWeOffer(){
@@ -74,5 +80,18 @@ public class HomePage {
     public BlogPage clickBlogMenu(){
         selectMainMenu("Blog");
         return new BlogPage(driver);}
+
+    public void scrollToSection(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        String script = "arguments[0].scrollIntoView();";
+        WebElement element = driver.findElement(blogSection);
+        System.out.println("The element is" + element);
+        js.executeScript(script, element);
+    }
+
+
+    public BlogArticlePage clickFirstBlog(){
+        clickBlogPost(1);
+    return new BlogArticlePage(driver);}
 
 }

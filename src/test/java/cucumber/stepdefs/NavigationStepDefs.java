@@ -47,7 +47,7 @@ public class NavigationStepDefs extends BaseTests {
     @When("^I scroll to the Blog section$")
     public void scrollBlogsSection() {
         // Write code here that turns the phrase above into concrete actions
-
+        homePage.scrollToSection();
     }
 
     @Then("^I am taken to the Blogs page$")
@@ -67,7 +67,7 @@ public class NavigationStepDefs extends BaseTests {
     @When("^i click first blog$")
         public void clickFirstBlogs() {
         // Write code here that turns the phrase above into concrete actions
-
+        homePage.clickFirstBlog();
     };
 
     @Then("^I am taken to the Blogs article page$")
