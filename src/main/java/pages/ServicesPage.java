@@ -1,0 +1,19 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class ServicesPage extends HomePage {
+    private WebDriver driver;
+
+    public ServicesPage(WebDriver driver){
+        super(driver);
+        //this.driver = driver;
+    }
+
+
+    private void clickLink(String linkText){
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
+}

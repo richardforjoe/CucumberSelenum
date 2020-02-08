@@ -2,14 +2,18 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pages.SubFramesPages.NestedFramesPage;
-import utils.BaseClass;
+import org.openqa.selenium.WebElement;
+
+
+import java.util.List;
 
 
 public class HomePage {
 
     private WebDriver driver;
-    private By pageTitle = By.className("heading");
+    private By pageTitle = By.tagName("h1");
+    private By blogArticle = By.cssSelector("div.hs-rss-item p a");
+    private By MenuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -19,83 +23,56 @@ public class HomePage {
         return driver.findElement(pageTitle).getText();
     }
 
-    public LoginPage clickFormAuthentication(){
-        clickLink("Form Authentication");
-        return new LoginPage(driver);
-    }
 
-    public DropdownPage clickDropDown(){
-        clickLink("Dropdown");
-        return new DropdownPage(driver);
-    }
 
-    public ForgotPasswordPage clickRetrievePassword(){
-        clickLink("Forgot Password");
-        return new ForgotPasswordPage(driver);
-    }
-
-    public HoversPage clickHover(){
-        clickLink("Hovers");
-        return new HoversPage(driver);
-    }
-
-    public KeyPressesPage clickKeyPresses(){
-        clickLink("Key Presses");
-        return new KeyPressesPage(driver);
-    }
-
-    public HorizontalSliderPage clickHorizonalSlider(){
-        clickLink("Horizontal Slider");
-        return new HorizontalSliderPage(driver);
-    }
-
-    public AlertsPage clickJavaScriptAlerts(){
-        clickLink("JavaScript Alerts");
-        return new AlertsPage(driver);
-    }
-
-    public FileUploadPage clickFileUpload(){
-        clickLink("File Upload");
-        return new FileUploadPage(driver);
-    }
-
-    public ContextMenuPage clickContextMenu(){
-        clickLink("Context Menu");
-        return new ContextMenuPage(driver);
-    }
-
-    public iFramePage clickWYSIWYGMenu(){
-        clickLink("WYSIWYG Editor");
-        return new iFramePage(driver);
-    }
-
-    public FramesPage clickFrames(){
-        clickLink("Frames");
-        return new FramesPage(driver);
-    }
-
-    public DynamicLoadingPage clickDynamicLoading(){
-        clickLink("Dynamic Loading");
-        return new DynamicLoadingPage(driver);
-    }
-
-    public LargeAndDeepDomPage clickLargeAndDeepDom(){
-        clickLink("Large & Deep DOM");
-        return new LargeAndDeepDomPage(driver);
-    }
-
-    public InfiniteScrollPage clickInfiniteScroll(){
-        clickLink("Infinite Scroll");
-        return new InfiniteScrollPage(driver);
-    }
-
-    public MultipleWindowsPage clickMultipleWindows() {
-        clickLink("Multiple Windows");
-        return new MultipleWindowsPage(driver);
-    }
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
 
+    private void clickBlogPost(int blogNumber){
+        List<WebElement> blogArticles = driver.findElements(blogArticle);
+        System.out.println(blogArticles.size());
+        blogArticles.get(blogNumber).click();
+    }
+
+    private void selectMainMenu(String menu){
+        List<WebElement> menuItems = driver.findElements(MenuNavigation);
+        System.out.println(menuItems.size());
+
+        switch (menu) {
+            case "Services":
+                menuItems.get(0).click();
+                break;
+            case "Blog":
+                menuItems.get(5).click();
+                break;
+            default:
+                System.out.println("No menu item selected");
+                break;
+        }
+    }
+
+
+    public void clickCookieBanner(){
+        driver.findElement(By.cssSelector("#hs-eu-confirmation-button")).click();
+    }
+
+    public ServicesPage clickWhatWeOffer(){
+        driver.findElement(By.id("#cta_button_2612720_07095d9d-7233-4f7f-b54f-352882b58d73")).click();
+    return new ServicesPage(driver);
+    }
+
+
+    public PrivacyPolicyPage clickPrivacyPolicy(){
+        clickLink("Privacy Policy");
+        return new PrivacyPolicyPage(driver);}
+
+    public CookiePolicyPage clickCookiePolicy(){
+        clickLink("Cookie Policy");
+        return new CookiePolicyPage(driver);}
+
+    public BlogPage clickBlogMenu(){
+        selectMainMenu("Blog");
+        return new BlogPage(driver);}
 
 }

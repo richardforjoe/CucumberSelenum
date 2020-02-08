@@ -7,6 +7,13 @@
       <change afterPath="$PROJECT_DIR$/../December/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../December/src/FirstPackage/Car.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../December/src/FirstPackage/FirstProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Actions/MenuNavigation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CookiePolicyPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PrivacyPolicyPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ServicesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOCA/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOCA/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOCA/src/File/Animal.java" afterDir="false" />
@@ -49,45 +56,37 @@
       <change afterPath="$PROJECT_DIR$/../JavaOCA/src/java_basics/loops.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOCA/src/stockanalysis/aggregators/AggregatorProcessor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOCA/src/stockanalysis/client/AggregatorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/conf/local.conf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/conf/parallel.conf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/conf/single.conf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EmailSentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HorizontalSliderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SubFramesPages/NestedFramesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/iFramePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/RestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/alerts/AlertTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/alerts/FileUploadTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/contectmenu/ContextMenuTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/dropdown/DropdownTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/frames/FrameTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/keys/KeysTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/keys/SliderTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/login/ForgotPasswordTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/login/JavaSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/login/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/browserstack/BrowserStackJUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/browserstack/LocalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/browserstack/Parallelized.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/browserstack/SingleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/features/CreateAccount.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/resources/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/AlertsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/ContextMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/DropdownPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/EmailSentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/FileUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/FramesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/HorizontalSliderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/HoversPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/SecureAreaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/SubFramesPages/NestedFramesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/main/java/pages/iFramePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/BaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/alerts/AlertTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/alerts/FileUploadTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/contectmenu/ContextMenuTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/dropdown/DropdownTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/frames/FrameTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/hover/HoverTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/keys/KeysTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/keys/SliderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/login/ForgotPasswordTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/login/JavaSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumProject/src/test/java/base/login/LoginTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../code_puzzle/assignment_02/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../code_puzzle/assignment_03/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../code_puzzle/assignment_03/src/assignment_03/assignment_04.java" afterDir="false" />
@@ -160,22 +159,99 @@
       <change afterPath="$PROJECT_DIR$/../src/vehicle/Driver.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/vehicle/Vehicle.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testautomationbrowserstack-master/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Endpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Endpoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EmailSentPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HorizontalSliderPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/InfiniteScrollPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LargeAndDeepDomPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MultipleWindowsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SubFramesPages/DynamicLoadingExample1Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SubFramesPages/DynamicLoadingExample2Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SubFramesPages/NestedFramesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/iFramePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/Endpoints.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/RestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/alerts/AlertTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/alerts/FileUploadTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/contectmenu/ContextMenuTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/dropdown/DropdownTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/frames/FrameTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/javascript/JavaScriptTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/keys/KeysTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/keys/SliderTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/login/ForgotPasswordTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/login/JavaSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/login/LoginTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/wait/WaitTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/windows/WindowTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/features/CreateAccount.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/features/Withdraw.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/features/Navigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SeleniumProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AlertsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ContextMenuPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DropdownPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DynamicLoadingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/EmailSentPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/FileUploadPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ForgotPasswordPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/FramesPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/Endpoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/Endpoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/ServicesUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ServicesUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HorizontalSliderPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HoversPage$FigureCaption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HoversPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/InfiniteScrollPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/KeyPressesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LargeAndDeepDomPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MultipleWindowsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/SecureAreaPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/SubFramesPages/DynamicLoadingExample1Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/SubFramesPages/DynamicLoadingExample2Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/SubFramesPages/NestedFramesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/iFramePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/Endpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/ServicesUtils$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/ServicesUtils$HttpMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ServicesUtils$HttpMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/ServicesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ServicesUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/alerts/AlertTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/alerts/FileUploadTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/contectmenu/ContextMenuTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/dropdown/DropdownTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/frames/FrameTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/hover/HoverTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/javascript/JavaScriptTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/keys/KeysTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/keys/SliderTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/login/ForgotPasswordTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/login/JavaSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/login/LoginTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/navigation/NavigationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/navigation/NavigationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/wait/WaitTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/windows/WindowTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber/CucumberTestOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cucumber/CucumberTestOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber/stepdefs/LoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cucumber/stepdefs/LoginStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber/stepdefs/LoginStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -190,73 +266,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3932#3933#0" expanded="true" />
-                <element signature="e#3980#3981#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/base/RestTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="113" column="60" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/browserstack/BrowserStackJUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="36" selection-end-column="138" />
+            <state relative-caret-position="208">
+              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,16 +281,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/test.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="45">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/BaseClass.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/Navigation.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Actions/MenuNavigation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -286,25 +374,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AlertsPage.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/browserstack/LocalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -324,21 +397,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HoverPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HorizontalSliderPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/keys/SliderTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/keys/KeysTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/JavaScriptAlertPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/alerts/AlertTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/alerts/FileUploadTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/contectmenu/ContextMenuTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/iFramePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/frames/FrameTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" />
@@ -358,7 +416,6 @@
         <option value="$PROJECT_DIR$/src/test/java/cucumber/features/Login.feature" />
         <option value="$PROJECT_DIR$/src/main/java/utils/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/Endpoints.java" />
         <option value="$PROJECT_DIR$/src/test/java/cucumber/features/Withdraw.feature" />
         <option value="$PROJECT_DIR$/src/test/java/cucumber/features/CreateAccount.feature" />
@@ -369,12 +426,28 @@
         <option value="$PROJECT_DIR$/src/test/java/browserstack/LocalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/browserstack/Parallelized.java" />
         <option value="$PROJECT_DIR$/src/test/java/browserstack/SingleTest.java" />
-        <option value="$PROJECT_DIR$/resources/test.properties" />
         <option value="$PROJECT_DIR$/src/test/java/browserstack/BrowserStackJUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/DuckDuckGoPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/DuckDuckGoResultsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/duckduckgo/SearchDuckDuckGoTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/DuckDuckGoSearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CookiePolicyPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/PrivacyPolicyPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ServicesPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" />
+        <option value="$PROJECT_DIR$/resources/test.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/cucumber/features/Navigation.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/BaseTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Actions/MenuNavigation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
       </list>
     </option>
   </component>
@@ -395,22 +468,17 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Selenium" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Selenium" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="1280" />
-    <option name="width" value="958" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2066" />
+    <option name="y" value="290" />
+    <option name="width" value="1014" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -418,46 +486,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -465,36 +541,20 @@
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -502,7 +562,16 @@
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -510,7 +579,16 @@
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infomentum Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -521,11 +599,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -549,8 +628,34 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.CucumberTestOptions">
+    <configuration name="BaseTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="base.BaseTests" />
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationStepDefs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.stepdefs.NavigationStepDefs" />
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CucumberTestOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
+      <module name="Selenium" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.*" />
@@ -564,68 +669,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchDuckDuckGoTests.searchDuckDuckGo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.login.*" />
+          <option name="PATTERN" value="duckduckgo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.login" />
-      <option name="MAIN_CLASS_NAME" value="base.login.LoginTests" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="duckduckgo" />
+      <option name="MAIN_CLASS_NAME" value="duckduckgo.SearchDuckDuckGoTests" />
+      <option name="METHOD_NAME" value="searchDuckDuckGo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTest.test_register" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
+    <configuration name="NavigationTests.testSuccessfullNavigateToBlog" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.*" />
+          <option name="PATTERN" value="base.navigation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base" />
-      <option name="MAIN_CLASS_NAME" value="base.RestTest" />
-      <option name="METHOD_NAME" value="test_register" />
+      <option name="PACKAGE_NAME" value="base.navigation" />
+      <option name="MAIN_CLASS_NAME" value="base.navigation.NavigationTests" />
+      <option name="METHOD_NAME" value="testSuccessfullNavigateToBlog" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitTests.testWaitUntilHidden" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.wait.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base.wait" />
-      <option name="MAIN_CLASS_NAME" value="base.wait.WaitTests" />
-      <option name="METHOD_NAME" value="testWaitUntilHidden" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.windows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base.windows" />
-      <option name="MAIN_CLASS_NAME" value="base.windows.WindowTests" />
       <properties />
       <listeners />
       <method v="2">
@@ -635,10 +706,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CucumberTestOptions" />
-        <item itemvalue="TestNG.RestTest.test_register" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.WaitTests.testWaitUntilHidden" />
-        <item itemvalue="TestNG.WindowTests" />
+        <item itemvalue="Application.NavigationStepDefs" />
+        <item itemvalue="TestNG.NavigationTests.testSuccessfullNavigateToBlog" />
+        <item itemvalue="Application.BaseTests" />
+        <item itemvalue="JUnit.SearchDuckDuckGoTests.searchDuckDuckGo" />
       </list>
     </recent_temporary>
   </component>
@@ -656,34 +727,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTestOptions - 2019.12.19 at 22h 47m 58s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 14m 30s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 08h 57m 03s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 32m 00s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 08h 57m 49s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 34m 49s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 08h 59m 19s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 40m 22s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 29m 03s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 47m 01s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 31m 31s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 51m 54s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 37m 16s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 53m 19s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 50m 56s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 00h 58m 19s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 51m 24s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 01h 19m 31s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CucumberTestOptions - 2019.12.20 at 10h 56m 43s.xml">
+    <history-entry file="CucumberTestOptions - 2020.02.08 at 01h 23m 06s.xml">
       <configuration name="CucumberTestOptions" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -697,30 +768,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="0" width="1076" height="1080" extended-state="6" />
+    <frame x="2066" y="290" width="1014" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.34622824" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.32921812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50157726" side_tool="true" weight="0.23450586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13861386" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3980198" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28615862" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45101088" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329653" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329653" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32871288" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32739726" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.12185687" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.049382716" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
@@ -729,75 +800,51 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/login/LoginTests.java</url>
-          <line>15</line>
+          <line>13</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/login/LoginTests.java</url>
-          <line>16</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/login/LoginTests.java</url>
-          <line>18</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java</url>
-          <line>21</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java</url>
-          <line>19</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java</url>
-          <line>18</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java</url>
-          <line>16</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java</url>
-          <line>15</line>
+          <line>13</line>
           <properties />
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/contectmenu/ContextMenuTests.java</url>
@@ -824,302 +871,92 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java</url>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
           <line>37</line>
           <properties />
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java</url>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java</url>
-          <line>112</line>
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java</url>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/InfiniteScrollPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="70" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/dropdown/DropdownTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/selenium-webdriver-java-course-c10 2/webdriver_java/src/test/java/base/BaseTests.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/selenium-webdriver-java-course-c11 2/webdriver_java/src/test/java/base/BaseTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="5" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MultipleWindowsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/windows/WindowTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/wait/WaitTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screenshots/test.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/hover/HoverTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WindowManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/login/JavaSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/javascript/JavaScriptTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DropdownPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/EventReporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/iFramePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="843" column="25" selection-start-line="843" selection-start-column="25" selection-end-line="843" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/EmailSentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/login/LoginTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/login/ForgotPasswordTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/login/LoginTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/login/ForgotPasswordTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar!/io/restassured/specification/RequestSenderOptions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1134,36 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/Login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/Withdraw.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HoversPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HoversPage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar!/io/restassured/specification/RequestSpecification.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1171,13 +979,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/Endpoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/Endpoints.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar!/io/restassured/response/Response.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1196,27 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/CreateAccount.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/conf/single.conf.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/conf/parallel.conf.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -1242,40 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/conf/local.conf.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AlertsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/browserstack/BrowserStackJUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1296,54 +1043,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/DuckDuckGoSearchPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/AbstractPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/DuckDuckGoPages/DuckDuckGoResultsPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/EventReporter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/RestTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WindowManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="675">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/LoginStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="113" column="60" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/RestTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/duckduckgo/SearchDuckDuckGoTests.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/ServicesUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/Login.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/alerts/AlertTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/contectmenu/ContextMenuTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/javascript/JavaScriptTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" />
+    <entry file="file://$PROJECT_DIR$/resources/conf/local.conf.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/conf/parallel.conf.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/conf/single.conf.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CookiePolicyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PrivacyPolicyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/CreateAccount.feature" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ServicesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/navigation/NavigationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/features/Navigation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberTestOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state relative-caret-position="208">
+          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3932#3933#0" expanded="true" />
-            <element signature="e#3980#3981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/stepdefs/NavigationStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/MenuNavigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
