@@ -3,12 +3,12 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ServicesPage extends HomePage {
+public class ServicesPage  {
     private WebDriver driver;
 
     public ServicesPage(WebDriver driver){
-        super(driver);
-        //this.driver = driver;
+
+        this.driver = driver;
     }
 
 

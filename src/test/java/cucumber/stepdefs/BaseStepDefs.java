@@ -5,12 +5,13 @@ import cucumber.api.java.en.*;
 import pages.BlogArticlePage;
 import pages.BlogPage;
 import pages.HomePage;
+import pages.SearchPage;
 
 import static org.testng.Assert.assertTrue;
 import static io.restassured.path.json.JsonPath.from;
 
 
-public class NavigationStepDefs extends BaseTests {
+public class BaseStepDefs extends BaseTests {
 
     // The code in this file is called step definitions and they map to the steps within the feature file above
 
@@ -18,6 +19,7 @@ public class NavigationStepDefs extends BaseTests {
     HomePage homePage;
     BlogPage blogPage;
     BlogArticlePage blogArticlePage;
+    SearchPage searchPage;
 
 
 
@@ -66,11 +68,34 @@ public class NavigationStepDefs extends BaseTests {
 
     };
 
-    @When("^i click first blog$")
-        public void clickFirstBlogs() {
+
+    @When("^I search for (.*) via search menu$")
+    public void searchForTerm(String searchTerm) {
         // Write code here that turns the phrase above into concrete actions
-        blogArticlePage = homePage.clickFirstBlog();
+        searchPage = homePage.searchForATerm(searchTerm);
     };
+
+    @Then("^I am shown search results containing (.*) on the search results page$")
+    public void displaySearchResult(String searchTerm) {
+        // Write code here that turns the phrase above into concrete actions
+        String pageTitle = searchPage.getPageTitle();
+        Integer searchResultTotal = Integer.parseInt(searchPage.getSearchResultAttribute(0,"Total"));
+/*        String searchResultType = searchPage.getSearchResultAttribute(0,"Type");
+        String searchResultTitle = searchPage.getSearchResultAttribute(0,"Title");
+        String searchResultDescription = searchPage.getSearchResultAttribute(0,"Description");
+*/
+        assertTrue(pageTitle.equals("Search Results"),"The wrong page was displayed");
+        assertTrue(searchResultTotal > 0,"No results are returned");
+        assertTrue(searchPage.isSearchResultsContainingSearchTerm(searchTerm),"The results do not match the search term");
+
+    };
+
+    @When("^i click (.*) blog$")
+        public void clickFirstBlogs(String blogNumber) {
+        // Write code here that turns the phrase above into concrete actions
+        blogArticlePage = homePage.clickBlog(blogNumber);
+    };
+
 
     @Then("^I am taken to the Blogs article page$")
         public void iAmOnArticlePage() {

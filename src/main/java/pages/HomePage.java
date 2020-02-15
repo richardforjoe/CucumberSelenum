@@ -1,9 +1,7 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 
 
 import java.util.List;
@@ -14,6 +12,8 @@ public class HomePage {
     private WebDriver driver;
 
     private By pageTitle = By.tagName("h1");
+    private By searchButtonMainMenu = By.cssSelector("li .search-trigger ");
+
     private By blogArticle = By.cssSelector("div.hs-rss-item p a");
     private By blogArticleTitle = By.cssSelector("div.hs-rss-item .hs-rss-title");
     private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
@@ -36,6 +36,15 @@ public class HomePage {
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
+
+
+
+    public SearchPage searchForATerm(String searchString){
+        selectMainMenu("Search");
+        SearchBox searchBox = new SearchBox(driver);
+        searchBox.setSearchTerm(searchString);
+
+    return searchBox.hitSearch();}
 
 
 
@@ -70,6 +79,9 @@ public class HomePage {
                 break;
             case "Blog":
                 menuItems.get(5).click();
+                break;
+            case "Search":
+                menuItems.get(6).click();
                 break;
             default:
                 System.out.println("No menu item selected");
@@ -109,12 +121,50 @@ public class HomePage {
     }
 
 
-    public BlogArticlePage clickFirstBlog(){
-        clickBlogPost(0);
-    return new BlogArticlePage(driver);}
+    public BlogArticlePage clickBlog(String blogNumber) {
+        switch (blogNumber) {
+            case "first":
+                clickBlogPost(0);
+                return new BlogArticlePage(driver);
+            case "second":
+                clickBlogPost(1);
+                return new BlogArticlePage(driver);
+            case "third":
+                clickBlogPost(2);
+                return new BlogArticlePage(driver);
+            default:
+                System.out.println("No menu item selected");
+                clickBlogPost(0);
+                return new BlogArticlePage(driver);
+        }
 
-    public BlogArticlePage clickSecondBlog(){
-        clickBlogPost(1);
-        return new BlogArticlePage(driver);}
 
-}
+    }
+    public class SearchBox {
+
+        private WebDriver driver;
+        private By searchInputFieldMainMenu = By.cssSelector(".search-area .hs-search-field__input");
+        private By closeSearch = By.cssSelector(".search-area .close-search ");
+
+        public SearchBox(WebDriver driver) {
+            this.driver = driver;
+        }
+
+        //what do we want to know eg is the caption displayed
+
+        public boolean isSearchDisplayed() {
+            WebElement element = driver.findElement(searchInputFieldMainMenu);
+            return element.isDisplayed();
+        }
+
+        public void setSearchTerm(String searchString){
+            driver.findElement(searchInputFieldMainMenu).sendKeys(searchString);
+
+        }
+        public SearchPage hitSearch() {
+            driver.findElement(searchInputFieldMainMenu).sendKeys(Keys.ENTER);
+        return new SearchPage(driver);}
+
+    }}
+
+
