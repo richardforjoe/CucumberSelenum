@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import Actions.MenuNavigation;
 
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class HomePage {
 
     private By blogArticle = By.cssSelector("div.hs-rss-item p a");
     private By blogArticleTitle = By.cssSelector("div.hs-rss-item .hs-rss-title");
-    private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
+    //private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
     private By blogSection = By.cssSelector("div.row-fluid-wrapper.row-depth-1.row-number-68");
     private By cookie = By.cssSelector("#hs-eu-confirmation-button");
 
@@ -37,14 +38,14 @@ public class HomePage {
         this.driver = driver;
     }
 
-
+    MenuNavigation menuNavigation = new MenuNavigation(driver);
 
     public SearchPage searchForATerm(String searchString){
-        selectMainMenu("Search");
+   /**     selectMainMenu("Search");
         SearchBox searchBox = new SearchBox(driver);
-        searchBox.setSearchTerm(searchString);
+        searchBox.setSearchTerm(searchString); **/
 
-    return searchBox.hitSearch();}
+    return menuNavigation.searchForATerm(searchString);}
 
 
 
@@ -69,7 +70,7 @@ public class HomePage {
         blogArticles.get(blogNumber).click();
     }
 
-    private void selectMainMenu(String menu){
+    /**private void selectMainMenu(String menu){
         List<WebElement> menuItems = driver.findElements(menuNavigation);
         System.out.println(menuItems.size());
 
@@ -87,7 +88,7 @@ public class HomePage {
                 System.out.println("No menu item selected");
                 break;
         }
-    }
+    }**/
 
 
     public void clickCookieBanner(){
@@ -109,7 +110,7 @@ public class HomePage {
         return new CookiePolicyPage(driver);}
 
     public BlogPage clickBlogMenu(){
-        selectMainMenu("Blog");
+        menuNavigation.selectMainMenu("Blog");
         return new BlogPage(driver);}
 
     public void scrollToSection(){
@@ -140,7 +141,7 @@ public class HomePage {
 
 
     }
-    public class SearchBox {
+    /**public class SearchBox {
 
         private WebDriver driver;
         private By searchInputFieldMainMenu = By.cssSelector(".search-area .hs-search-field__input");
@@ -165,6 +166,6 @@ public class HomePage {
             driver.findElement(searchInputFieldMainMenu).sendKeys(Keys.ENTER);
         return new SearchPage(driver);}
 
-    }}
+    }**/}
 
 

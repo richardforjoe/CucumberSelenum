@@ -6,6 +6,7 @@ import pages.BlogArticlePage;
 import pages.BlogPage;
 import pages.HomePage;
 import pages.SearchPage;
+import Actions.MenuNavigation;
 
 import static org.testng.Assert.assertTrue;
 import static io.restassured.path.json.JsonPath.from;
@@ -20,6 +21,7 @@ public class BaseStepDefs extends BaseTests {
     BlogPage blogPage;
     BlogArticlePage blogArticlePage;
     SearchPage searchPage;
+    MenuNavigation menuNavigation;
 
 
 
