@@ -34,3 +34,4 @@ Scenario: Navigate to the Integrations page via Navigation menu
     Given I am on the Home page
     When I click the Integrations page link
     Then I am taken to the Integrations page
+

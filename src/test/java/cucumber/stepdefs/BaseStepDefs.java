@@ -54,8 +54,15 @@ public class BaseStepDefs extends BaseTests {
     public void clickIntegrationsPage() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("I am clicking on the Services/ Integration link menu...");
-         integrationsPage = menuNavigation.hoverOverSubMenu(0);
+         integrationsPage = menuNavigation.clickIntegratonsSubMenu();
     }
+
+    @Then("^I am taken to the Integrations page$")
+    public void IntegrationsPage() {
+        // Write code here that turns the phrase above into concrete actions
+        assertTrue(integrationsPage.getPageTitle().contains("Integration Services"),"text is incorrect");
+
+    };
 
     @When("^I scroll to the Blog section$")
     public void scrollBlogsSection() {

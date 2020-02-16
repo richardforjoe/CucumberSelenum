@@ -15,11 +15,12 @@ public class MenuNavigation {
 
     private WebDriver driver;
     private By menuNavigation = By.cssSelector("li.hs-menu-item.hs-menu-depth-1");
-    private By searchButtonMainMenu = By.cssSelector("li .search-trigger ");
-    private By subMenuNavigation = By.cssSelector("ul.hs-menu-children-wrapper");
+    private By searchButtonMainMenu = By.cssSelector("li .search-trigger");
+    private By subMenuNavigation = By.cssSelector("ul.hs-menu-children-wrapper a");
     private WebElement subMenu;
     private By subMenuHoover = By.cssSelector("li.hs-item-has-children");
-    private By hooverlink = By.cssSelector("ul.hs-menu-children-wrapper a");
+
+    private String selectedSubMenuLinkText = "";
 
     public MenuNavigation(WebDriver driver){
         this.driver = driver;
@@ -28,88 +29,76 @@ public class MenuNavigation {
         driver.findElement(By.linkText(linkText)).click();
     }
 
-    public boolean isSubMenuDisplayed(){
+    public boolean isSubMenuDisplayed(int index){
+        subMenu = driver.findElements(subMenuNavigation).get(index);
         return subMenu.isDisplayed();
     }
 
-    public String getSubMenuTitle(int index){
-        return subMenu.findElements(subMenuHoover).get(index).getText();
+    public String getMainMenuTitle(int index){
+        subMenu = driver.findElements(menuNavigation).get(index);
+        return subMenu.getText();
     }
 
     public String getSubMenuLink(int index){
-        return subMenu.findElements(hooverlink).get(index).getAttribute("href");
+        subMenu = driver.findElements(subMenuNavigation).get(index);
+        return subMenu.getAttribute("href");
     }
 
     public String getSubMenuLinkText(int index){
-        return subMenu.findElements(hooverlink).get(index).getText();
+        subMenu = driver.findElements(subMenuNavigation).get(index);
+        return subMenu.getText();
     }
 
-    public void hoverOverMainMenu(String menu,int index){
+    public void hooverSubMenu(int menuIndex, int subMenuIndex){
+        Actions actions = new Actions(driver);
+        List<WebElement> menuItems = driver.findElements(menuNavigation);
+        List<WebElement> subMenuItems = driver.findElements(subMenuNavigation);
 
-        WebElement menuItems;
-        Actions actions = new Actions(driver); //contains advanced interactions
-
-        switch (menu) {
-            case "Services":
-                menuItems = driver.findElements(menuNavigation).get(0);
-                actions.moveToElement(menuItems).perform();
-                break;
-            case "Business solutions":
-                menuItems = driver.findElements(menuNavigation).get(1);
-                actions.moveToElement(menuItems).perform();
-                break;
-            case "nsights":
-                menuItems = driver.findElements(menuNavigation).get(3);
-                actions.moveToElement(menuItems).perform();
-                break;
-            default:
-                System.out.println("No menu item selected");
-                break;
-        }
-
-
-
-
-        WebElement subMenu = driver.findElements(subMenuNavigation).get(index - 1);
-        actions.moveToElement(subMenu).perform(); //Move mouse to element, hoover
-        actions.moveToElement(subMenu).click();
-
+        actions.moveToElement(menuItems.get(menuIndex));
+        actions.moveToElement(subMenuItems.get(subMenuIndex));
+        actions.perform();
     }
 
-    public IntegrationsPage hoverOverSubMenu(int index) {
 
-        List<WebElement> menuItems = driver.findElements(subMenuNavigation);
-        Actions actions = new Actions(driver); //contains advanced interactions
-
-         actions.moveToElement(menuItems.get(index)).perform();
-         actions.moveToElement(menuItems.get(index)).click();
-
+    public IntegrationsPage clickIntegratonsSubMenu() {
+        selectMainMenuLink("Integration");
     return new IntegrationsPage(driver);}
 
     public SearchPage searchForATerm(String searchString){
-        selectMainMenu("Search");
+        selectMainMenuLink("Search");
         MenuNavigation.SearchBox searchBox = new MenuNavigation.SearchBox(driver);
         searchBox.setSearchTerm(searchString);
 
         return searchBox.hitSearch();}
 
     public BlogPage clickBlogMenu(){
-        selectMainMenu("Blog");
+        selectMainMenuLink("Blog");
         return new BlogPage(driver);}
 
-    private void selectMainMenu(String menu){
+    private void selectMainMenuLink(String menu){
+        Actions actions = new Actions(driver);
         List<WebElement> menuItems = driver.findElements(menuNavigation);
+        List<WebElement> subMenuItems = driver.findElements(subMenuNavigation);
+
         System.out.println(menuItems.size());
 
         switch (menu) {
             case "Services":
-                menuItems.get(0).click();
+                actions.moveToElement(menuItems.get(0));
+                actions.click().build().perform();
+                break;
+            case "Integration":
+                actions.moveToElement(menuItems.get(0));
+                actions.moveToElement(subMenuItems.get(0));
+                actions.click().build().perform();
                 break;
             case "Blog":
-                menuItems.get(5).click();
+                actions.moveToElement(menuItems.get(5));
+                actions.click().build().perform();
                 break;
             case "Search":
-                menuItems.get(6).click();
+                actions.moveToElement(menuItems.get(6));
+                actions.click().build().perform();
                 break;
             default:
                 System.out.println("No menu item selected");
