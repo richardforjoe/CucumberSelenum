@@ -1,5 +1,6 @@
 package base.navigation;
 
+import Actions.MenuNavigation;
 import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.BlogPage;
@@ -8,9 +9,11 @@ import static org.testng.Assert.assertTrue;
 
 public class NavigationTests extends BaseTests {
 
+    MenuNavigation menuNavigation;
+
     @Test
     public void testSuccessfullNavigateToBlog(){
-        BlogPage blogPage = homePage.clickBlogMenu();
+        BlogPage blogPage = menuNavigation.clickBlogMenu();
 
 
   //      assertTrue(secureAreaPage.getAlertText().contains("You logged into a secure area!"),"Alert text is incorrect");

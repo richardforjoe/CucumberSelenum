@@ -1,5 +1,6 @@
 package cucumber.stepdefs;
 
+import Actions.MenuNavigation;
 import base.BaseTests;
 import cucumber.api.java.en.*;
 import pages.BlogArticlePage;
@@ -20,6 +21,7 @@ public class BaseStepDefs extends BaseTests {
     BlogPage blogPage;
     BlogArticlePage blogArticlePage;
     SearchPage searchPage;
+    MenuNavigation menuNavigation;
 
 
 
@@ -30,6 +32,7 @@ public class BaseStepDefs extends BaseTests {
         BaseTests.setUp();
         BaseTests.goHome();
         homePage = new HomePage(driver); //Instantiate home page after launching browser
+        menuNavigation = new MenuNavigation(driver); //Instantiate menu navigation after launching browser
         System.out.println("I am clicking the cookie banner...");
         homePage.clickCookieBanner();
         assertTrue(homePage.getTitle().contains("We use technology to give businesses "),"text is incorrect");
@@ -45,7 +48,7 @@ public class BaseStepDefs extends BaseTests {
     public void clickBlogsPage() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("I am clicking on the blog menu...");
-        blogPage = homePage.clickBlogMenu();
+        blogPage = menuNavigation.clickBlogMenu();
             }
 
     @When("^I scroll to the Blog section$")
@@ -72,7 +75,7 @@ public class BaseStepDefs extends BaseTests {
     @When("^I search for (.*) via search menu$")
     public void searchForTerm(String searchTerm) {
         // Write code here that turns the phrase above into concrete actions
-        searchPage = homePage.searchForATerm(searchTerm);
+        searchPage = menuNavigation.searchForATerm(searchTerm);
     };
 
     @Then("^I am shown search results containing (.*) on the search results page$")

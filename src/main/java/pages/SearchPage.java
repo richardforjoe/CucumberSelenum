@@ -60,7 +60,6 @@ public class SearchPage {
                         ++containSearchTerm;
                 }
 
-
         }
         if(containSearchTerm == totalResults){
             return true;
