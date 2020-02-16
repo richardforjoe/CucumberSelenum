@@ -1,6 +1,6 @@
 package base.navigation;
 
-import Actions.MenuNavigation;
+import actions.MenuNavigation;
 import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.BlogPage;

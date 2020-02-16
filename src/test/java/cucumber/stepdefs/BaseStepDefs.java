@@ -1,12 +1,9 @@
 package cucumber.stepdefs;
 
-import Actions.MenuNavigation;
+import actions.MenuNavigation;
 import base.BaseTests;
 import cucumber.api.java.en.*;
-import pages.BlogArticlePage;
-import pages.BlogPage;
-import pages.HomePage;
-import pages.SearchPage;
+import pages.*;
 
 import static org.testng.Assert.assertTrue;
 import static io.restassured.path.json.JsonPath.from;
@@ -22,6 +19,7 @@ public class BaseStepDefs extends BaseTests {
     BlogArticlePage blogArticlePage;
     SearchPage searchPage;
     MenuNavigation menuNavigation;
+    IntegrationsPage integrationsPage;
 
 
 
@@ -37,6 +35,7 @@ public class BaseStepDefs extends BaseTests {
         homePage.clickCookieBanner();
         assertTrue(homePage.getTitle().contains("We use technology to give businesses "),"text is incorrect");
 
+        //menuNavigation.hoverOverSubMenu(1);
 
 
 
@@ -50,6 +49,13 @@ public class BaseStepDefs extends BaseTests {
         System.out.println("I am clicking on the blog menu...");
         blogPage = menuNavigation.clickBlogMenu();
             }
+
+    @When("^I click the Integrations page link$")
+    public void clickIntegrationsPage() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("I am clicking on the Services/ Integration link menu...");
+         integrationsPage = menuNavigation.hoverOverSubMenu(0);
+    }
 
     @When("^I scroll to the Blog section$")
     public void scrollBlogsSection() {

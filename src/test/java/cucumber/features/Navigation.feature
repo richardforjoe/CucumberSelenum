@@ -29,3 +29,8 @@ Scenario: Search for Mulesoft via Navigation menu
     Given I am on the Home page
     When I search for Mulesoft via search menu
     Then I am shown search results containing mulesoft on the search results page
+
+Scenario: Navigate to the Integrations page via Navigation menu
+    Given I am on the Home page
+    When I click the Integrations page link
+    Then I am taken to the Integrations page
