@@ -1,6 +1,7 @@
 package base;
 
 import com.google.common.io.Files;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -30,6 +31,8 @@ public class BaseTests {
         System.out.println("Into the setup method of BaseTests @Before Class...");
         releaseResources(driver);
         utils.BaseClass.loadTestProperties("test");
+
+        WebDriverManager.chromedriver().setup();
 
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
 
